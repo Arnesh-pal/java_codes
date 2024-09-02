@@ -1,0 +1,1955 @@
+import java.util.Scanner;
+/*factorial.............
+class Main {
+    public static int product(int n) {
+        int product = 1;
+        if(n<0){
+            System.out.println("invalid number");
+        }
+        for(int i=n;i>=1;i--){
+            product =product * i;
+        }
+        
+        
+        return product;
+    
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter yoour name");
+        int n = sc.nextInt();
+    
+        
+        System.out.println("the product of the two numbers is:- " + product(n));
+        
+    }
+}*/
+/* primecheck
+class functions{
+    public static void prime(int n){
+        boolean isprime=true;
+        if(n==0){
+            System.out.println("its not prime");
+            return;
+        }
+        for(int i=2;i<=n/2;i++){
+            if(n%i==0){
+                isprime=false;
+                break;
+            }
+        }
+        if(isprime){
+            if(n==1){
+                System.out.println(" this is neither composite nor prime");
+            }else{
+                System.out.println("its a prime number");
+            }
+        }else{
+            System.out.println("its not a prime number");
+        }
+        
+
+    }
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number to be checked");
+        int  n =sc.nextInt();
+        prime(n);
+
+    }
+}*/
+/*eveckeck
+class functions{
+    public static void evencheck(int n){
+        if(n%2==0){
+            System.out.println("its a even number");
+        }else{
+            System.out.println("its a odd number");
+        }
+        return;
+    }
+    public static void main(String []args){
+        Scanner sc =new Scanner(System.in);
+        System.out.print("enter the number to be checked:- ");
+        int n=sc.nextInt();
+        evencheck(n);
+    }
+}*/
+/*table of numberr............................
+class functions{
+    public static void table(int n){
+        int table =1;
+        for(int i=1;i<=10;i++){
+            table = n*i;
+            System.out.println(table);
+        }
+        return;
+
+    }
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter the table number:-");
+        int n= sc.nextInt();
+        table(n);
+    }
+}*/
+ /*recurrsion eg..................................
+ class functions {
+  public static void main(String[] args) {
+    int result = sum(10);
+    System.out.println(result);
+  }
+  public static int sum(int k) {
+    if (k > 0) {
+      return k + sum(k - 1);
+    } else {
+      return 0;
+    }
+  }
+}*/
+/*average of numbers ..................................
+class fn{
+    public static int average(int a, int b,int c){
+        int avg=0;
+        avg=(a+b+c)/3;
+        return avg ;
+
+    }
+    public static void main(String []args){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("Enter the numbers you wnat to TAKE THE AVERAGE:- ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        System.out.print("the average of the nmbers is :- " + average(a,b,c));
+    }
+}*/
+/*sum of odd numbers
+class fn{
+    public static int sumofodd(int n){
+        int sum =0;
+        for(int i=0;i<=n;i++){
+        if(i%2==0){
+            continue;    
+        }else{
+            sum =sum+i;
+        }
+    }
+    return sum;
+    }
+     public static void main(String [] args){
+        Scanner sc =new Scanner(System.in);
+        System.out.print("enter the number u want sum of :-");
+            int n=sc.nextInt();
+            System.out.print("the sum of all odd numbers is :-"+sumofodd(n));       
+    }
+}*/
+/*whos greater
+class fn{
+public static void greater(int a, int b){
+    if(a>b){
+        System.out.println(a+" is greater than "+b);
+    }else{
+        System.out.println(b+" is greater than "+a);
+    }
+    return;
+}
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter the number to be commpared:-");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        greater(a,b);
+
+    }
+}*/
+/*circumference .....................
+class fn{
+    public static double circumference(double r){
+        double circum=0;
+        double pi=3.14;
+        circum=2*pi*r;
+        return circum;
+    }
+    public static void main(String []args){
+        Scanner sc =new Scanner(System.in);
+        System.out.print("enter the radius:- ");
+        double r= sc.nextInt();
+        System.out.print("the circumference of the circle is:- "+circumference(r));
+
+
+    }
+}*/
+/*voting
+class fn{
+    public static void vote(int age){
+        if(age>=18){
+            System.out.println("your ar eligible to vote.");
+        }else{
+            System.out.println("your are not eligible to vote.");
+        }
+    }
+    public static void main(String []args){
+        Scanner sc =new Scanner(System.in);
+        System.out.print("enter your age:- ");
+        int age = sc.nextInt();
+        vote(age);
+    }
+}*/
+/*infinite loop
+class fn{
+    public static void main(String[] args) {
+        int n=1;
+        int i = 1;
+
+        do {
+            System.out.println(i);
+            i++;
+           
+        } while (n==1);
+    }
+}*/
+/*number count
+public class fn {
+   public static void main(String args[]) {
+       int positive = 0, negative = 0, zeros = 0;
+       System.out.println("Press 1 to continue & 0 to stop");
+       Scanner sc = new Scanner(System.in);
+       int input = sc.nextInt();
+       while(input == 1) {
+           System.out.println("Enter your number : ");
+           int number = sc.nextInt();
+           if(number > 0) {
+               positive++;
+           } else if(number < 0) {
+               negative++;
+           } else {
+               zeros++;
+           }
+           System.out.println("Press 1 to continue & 0 to stop");
+           input = sc.nextInt();
+       }
+       System.out.println("Positives : "+ positive);
+       System.out.println("Negatives : "+ negative);
+       System.out.println("Zeros : "+ zeros);
+   }   
+}*/
+/*x^n
+class fn{
+        public static void main(String args[]) {
+            System.out.println("Enter x");
+            Scanner sc = new Scanner(System.in);
+            int x = sc.nextInt();
+            System.out.println("Enter n");
+            int n = sc.nextInt();
+            int result = 1;
+            //Please see that n is not too large or else result will exceed the size of int
+            for(int i=0; i<n; i++) {
+                result = result * x;
+            }
+            System.out.println("x to the power n is : "+ result);
+        }   
+     }*/
+    /* printing the array and also the index of the same number as x........................... 
+     class fn{
+        public static void main(String []args){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("enter the size of the array");
+            int n=sc.nextInt();
+            int[] numbers=new int[n];
+           
+            for (int i =0;i<n;i++){
+                numbers[i]=sc.nextInt();
+              
+            }
+            for (int i=0;i<n;i++){
+                System.out.print(numbers[i]+ " ");
+            }System.out.println(" ");
+             System.out.println("enter the number x");
+             int x=sc.nextInt();
+            for(int i=0;i<n;i++){
+                if(numbers[i]==x){
+                    System.out.println("the number same as x is at this index :- "+i);
+                }
+            }
+
+        }
+     }*/
+/*names array
+class fn{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" enter the size ");
+        int n=sc.nextInt();
+        String names[]=new String[n];
+        for (int i=0;i<n;i++){
+            names[i]=sc.next();
+        }
+        for(int i=0;i<n;i++){
+
+            System.out.print(names[i]+" ");
+        }
+    }
+}*/
+/*miinium and maximum numbers
+class fn{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the size of the array:- ");
+        int n= sc.nextInt();
+        int num[]=new int[n];
+        System.out.println("enter the numbers :- ");
+        for(int i=0;i<n;i++){
+            num[i]=sc.nextInt();
+        }
+        int max=Integer.MIN_VALUE;
+        int min=Integer.MAX_VALUE;
+        for(int i=0;i<n;i++){
+            if(num[i]>max){
+                max=num[i];
+            }
+            if(num[i]<min){
+                min=num[i];
+            }
+        }
+        System.out.println("the maximun number is :- "+max);
+        System.out.println("the minimum number is :- "+min);
+    }
+}*/
+/*class fn{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the size of the array:- ");
+        int n=sc.nextInt();
+        int num[]=new int[n];
+        System.out.println("enter the values for the");
+        for(int i=0;i<n;i++){
+            num[i]=sc.nextInt();
+        }
+    }
+}*/
+/*2d matrix 
+class fn{
+    public static void main(String []args){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter the rows and coloums:- ");
+        int rows=sc.nextInt();
+        int col=sc.nextInt();
+        int [][] matrix=new int[rows][col];
+        for (int i=0;i<rows;i++){
+            for(int j=0;j<col;j++){
+                matrix[i][j]=sc.nextInt();
+            }
+        }
+        for(int i= 0;i<rows;i++){
+            for(int j =0;j<col;j++){
+                System.out.print(matrix[i][j]+" ");
+            }
+            System.out.println(" ");
+        }
+        System.out.println("enter the vaalue of x:- ");
+        int x=sc.nextInt();
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<col;j++){
+
+            
+        
+        if (matrix[i][j]==x){
+            System.out.println("the x is at the index {"+i+","+j+"}");
+
+        }
+    }
+}
+
+
+        
+        
+    }
+}*/
+/* febonachi matrix ....................................................
+ class fn {
+   public static void main(String args[]) {
+      Scanner sc = new Scanner(System.in);
+      System.out.println(" enter the rows and columns:- ");
+      int n = sc.nextInt();
+      int m = sc.nextInt();
+
+
+      int matrix[][] = new int[n][m];
+      System.out.println("enter the elements of the matrix :- ");
+      for(int i=0; i<n; i++) {
+           for(int j=0; j<m; j++) {
+               matrix[i][j] = sc.nextInt();
+           }
+      }
+
+
+      System.out.println("The Spiral Order Matrix is : ");
+      int rowStart = 0;
+      int rowEnd = n-1;
+      int colStart = 0;
+      int colEnd = m-1;
+
+
+      //To print spiral order matrix
+      while(rowStart <= rowEnd && colStart <= colEnd) {
+          //1
+          for(int col=colStart; col<=colEnd; col++) {
+              System.out.print(matrix[rowStart][col] + " ");
+          }
+          rowStart++;
+
+
+          //2
+          for(int row=rowStart; row<=rowEnd; row++) {
+              System.out.print(matrix[row][colEnd] +" ");
+          }
+          colEnd--;
+
+
+          //3
+          for(int col=colEnd; col>=colStart; col--) {
+              System.out.print(matrix[rowEnd][col] + " ");
+          }
+          rowEnd--;
+
+
+          //4
+          for(int row=rowEnd; row>=rowStart; row--) {
+              System.out.print(matrix[row][colStart] + " ");
+          }
+          colStart++;
+
+
+          System.out.println();
+      }
+   }
+}*/
+/*transposed matrix>>......................................................
+class fn{
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the rows and columns:-");
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        int [][] matrix=new int[n][m];
+        System.out.println("enter the elements of the matrix:- ");
+        for(int i= 0;i<n;i++){
+            for(int j=0;j<m;j++){
+                matrix[i][j]=sc.nextInt();
+            }
+        }
+        System.out.println(" ");
+        System.out.println("normal matrix :- ");
+        for(int i= 0;i<n;i++){
+            for(int j=0;j<m;j++){
+                System.out.print(matrix[i][j]+" ");
+            }
+            System.out.println(" ");
+        }
+        System.out.println(" ");
+        System.out.println("transposed matrix:- ");
+        for(int j=0;j<m;j++){
+            for(int i=0;i<n;i++){
+                System.out.print(matrix[i][j]+" ");
+            }
+            System.out.println(" ");
+        }
+        
+
+    }
+}*/
+/*lower and Upper case check.................................................
+class fn{
+    public static void main(String []args){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the alphabet: -");
+        char ch = sc.next().charAt(0);
+        if(ch>='a' && ch<='z'){
+            System.out.println("Lowercase!.");
+
+        }else{
+            System.out.println("Uppercase!!.");
+        }
+
+    }
+}
+*/
+/*febanaci numbers............................................................
+class fn{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int a=0;
+        int b=1;
+        int count =2;
+        int n=sc.nextInt();
+        while(count<=n){
+            int temp  = b;
+            b = b+a;
+            a=temp;
+            count++;
+            
+        }
+        System.out.println(b);
+    }
+}*/
+/*finding how many times x occured using array to store .........................................
+class fn{
+    public static void main(String []args){
+        Scanner sc =  new Scanner(System.in);
+        System.out.println("enter the size of array:- ");
+        int size=sc.nextInt();
+        
+        int []numbers=new int[size];
+        for (int i=0;i<size;i++){
+            numbers[i]=sc.nextInt();
+        }
+        int count =0;
+        System.out.println("enter the number to be checked:-");
+        int x=sc.nextInt();
+        for(int i=0;i<size;i++){
+            if(numbers[i]==x){
+                count++;
+            }
+        }
+        System.out.println("the number "+x+" has occured this many times :-");
+        System.out.println(count);
+    }
+}*/
+/*finding how manny times x has occured in a digit using while().......................................
+class fn{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number:- ");
+        int n=sc.nextInt();
+        System.out.println("enter the numebr to be checked:-");
+        int a=sc.nextInt();
+        int count=0;
+        while(n>0){
+            int rem=n%10;
+             if(rem==a){
+                count++;
+            }
+            n=n/10;
+        }
+        System.out.println("the number "+a+" has occured "+count+" times:-" );    
+    }
+}*/
+/*finding reverse of the numbers using while......................................................
+class fn{
+    public static void main(String []args){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter the number to be reversed:-");
+        int n=sc.nextInt();
+        int res=0;
+        while(n>0){
+            int rem=n%10;
+            n=n/10;
+            res=res*10+rem;
+
+        }
+        System.out.println("the reversed number is:-  "+res);
+    }
+}*/
+/*calculator .....................................................................
+class fn{
+    public static void main(String []args){
+        Scanner sc=new Scanner(System.in);
+        int ans=0;
+        while(true){
+            System.out.println("enter the operator:-");
+            char op=sc.next().charAt(0);
+            if (op=='+' || op=='-' || op=='*' || op=='/' || op=='%' ){
+                System.out.println("enter the number:-");
+                int a=sc.nextInt();
+                int b=sc.nextInt();
+                if(op=='+'){
+                    ans=a+b;
+                }
+                else if(op=='-'){
+                    ans=a-b;
+                }
+                else if(op=='*'){
+                    ans=a*b;
+                }
+                else if(op=='/'){
+                    if(b!=0){
+                        ans=a/b;
+                    }
+                }
+                else if(op=='%'){
+                    ans=a%b;
+                }
+            }else if(op=='x'){
+                break;
+            }
+            System.out.println("the answer is:-");
+            System.out.println(ans);
+        }
+
+    }
+}*/
+/*printing fruit characteristics using switch case...............................
+class fn {
+    public static void main(String[]args ){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the fruit name below:- ");
+        String fruits=sc.next();
+        switch(fruits){
+            case "mango":
+            System.out.println("king of fruits");
+            break;
+            case "apple":
+            System.out.println("An apple a day keeps the doctor away!!!!!!!");
+            break;
+            case "orange":
+            System.out.println("Yogi baba ka rang !!!!!");
+            break;
+            case "grapes":
+            System.out.println("eat some grapes!!!!");
+            break;
+            default :
+            System.out.println("Please enter a valid fruit!.");
+
+        }
+    }
+}*/
+/*leap year.........
+class fn {
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter teh year to be checked:-");
+        int year=sc.nextInt();
+        if(year%4==0){
+            System.out.println(year+" is a leap year");
+        }else{
+            System.out.println(year+" is not a leap year");
+        }
+
+    }
+}*/
+/*table
+class fn{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number");
+        int  n= sc.nextInt();
+        int table =1;
+        for(int i=1;i<=10;i++){
+            table = n*i;
+            System.out.println(table);
+        }
+    }
+}*/
+/*finding hcf and lcm of two numbers.....................................................
+class fn{
+    public static void main(String []args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println(" Enter the numbers to be checked:- ");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int hcf=0;
+        for(int i=1;i<=a || i<=b;i++){
+            if (a%i==0 && b%i==0){
+                hcf=i;
+            }
+
+        }System.out.println("the hcf of the two numbers is :- "+hcf);
+        int lcm=0;
+        for(int i=1;i<=a || i<=b;i++){
+        if(a%i==0 || b%i==0){
+            lcm=i;
+            
+        }
+    }System.out.println("the lcm of the two numbers is:-"+lcm);
+    }
+}*/
+/*Keep taking numbers as inputs till the user enters ‘x’, after that print sum of all..................
+public class fn {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double Sum = 0;
+        System.out.println("Enter numbers or 'x' to exit):");
+        while (true) {
+            String in = sc.next();
+            if (in.equalsIgnoreCase("x")) {
+                break;
+            }
+            try {
+                double number = Double.parseDouble(in);
+                Sum += number;
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input. Please enter a valid number or 'x' to exit.");
+            }
+        }
+        System.out.println("Sum of all entered numbers: " +Sum);
+        
+    }
+}*/
+/*maths operations with while loop to continue or end .
+class fn{
+    public static void main (String []args){
+        
+        Scanner sc = new Scanner(System.in);
+        
+        
+        while(true){
+            System.out.println("enter 2 numbers:- ");
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            System.out.println("enter the operation to be done :-");
+            char c=sc.next().charAt(0);
+        if (c=='*'){
+            System.out.println(a*b);
+        }
+        else if (c=='+'){
+            System.out.println(a+b);
+        }
+       else if(c=='-'){
+        System.out.println(a-b);
+       }
+        else if(c=='/'){
+            System.out.println(a/b);
+        }
+        else{
+            System.out.println("invalid ");
+        }
+        System.out.println("enter 1 to continue and 0 to end.");
+        int i=sc.nextInt();
+        if (i!=1){
+            break;
+        }
+        
+        }  
+
+        
+       
+       
+    }
+    }
+*/
+/*hollow butterfly
+class fn{
+    public static void main(String []args){
+        int n= 5;
+        for(int i=1;i<=n;i++){
+            for(int j= 1;j<=i;j++){
+                if(j==1 || i==j){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            for(int j=1;j<=2*(n-i);j++){
+                System.out.print(" ");
+            }
+            for(int j= 1;j<=i;j++){
+                if(j==1 || i==j){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        for(int i=1;i<=n;i++){
+            for(int j= 1;j<=6-i;j++){
+               if(j==1 || (i+j)==6){
+                System.out.print("*");
+               }else{
+                System.out.print(" ");
+               }
+               
+            }
+            int spaces = 2*(i-1);
+            for(int j=1;j<=spaces;j++){
+                System.out.print(" ");
+            }
+            for(int j= 1;j<=6-i;j++){
+                if(j==1 || (i+j)==6){
+                 System.out.print("*");
+                }else{
+                 System.out.print(" ");
+                }
+                
+             }
+            
+            System.out.println();
+        }
+        
+      
+        
+    }
+}*/
+/* hollow rhombus
+class fn{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int n=5;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            for(int j=1;j<=n;j++){
+                if(i==n || j==n || i==1 || j==1){
+                    System.out.print("*");
+                }else{
+                    System.out.print(" ");
+                }
+                
+            }
+            System.out.println();
+        }
+    }
+}*/
+/*prime ckeck
+class fn{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+       do{ System.out.println("Enter the number to be checked:-");
+        int n= sc.nextInt();
+        if(primecheck(n)){
+            System.out.println(n+" its a prime number.");
+        }else{
+            System.out.println(n+" its not a prime numebr.");
+
+        }
+        System.out.println("enter 1 to continue or 0 to end.");
+        int x=sc.nextInt();
+
+        if (x!=1){
+            break;
+        }
+    }while(true);
+
+    }
+    public static boolean primecheck(int n){
+        if(n<=1){
+            return false;
+        }
+        for(int i= 2;i<=Math.sqrt(n);i++){
+            if(n%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
+}*/
+/*class fn {
+    public static void main(String []args){
+       Scanner sc= new Scanner(System.in);
+       System.out.println("enter the numbers");
+       int x=sc.nextInt();
+       
+     for(int i=0;i<=x;i++){
+        System.out.println(table(i));
+     } 
+    }   
+    public static int table(int x){
+        
+    if(x<=1){
+        return x;
+    }else{
+        return table(x-1)+table(x-2);
+    }
+
+       
+}
+} */
+ /*maximum and minimum values array
+ class fn{
+    public static void main(String []args){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter the size :- ");
+        int size = sc.nextInt();
+        int [] num=new int[size];
+        System.out.println("enter the numbers :- ");
+        for(int i=0;i<num.length;i++){
+
+            num[i]=sc.nextInt();
+        }
+        int min=Integer.MAX_VALUE;
+        int max=Integer.MIN_VALUE;
+        for(int i=0;i<num.length;i++){
+            if(num[i]<min){
+                min=num[i];
+            }
+            else if(num[i]>max){
+                max=num[i];
+            }
+        }
+        System.out.println("the minimum value is :- "+min);
+        System.out.println("the maximum value is :-"+max);
+
+    }
+ }*/
+ /* finding x position
+ class fn{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int rows =sc.nextInt();
+        int cols = sc.nextInt();
+         int [][] matrix=new int[rows][cols];
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<cols;j++){
+                matrix[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<cols;j++){
+               System.out.print(matrix[i][j]+" ");
+            }
+            System.out.println();
+         }
+         System.out.println("enter the x:-");
+         int x=sc.nextInt();
+         for(int i=0;i<rows;i++){
+            for(int j=0;j<cols;j++){
+                if(matrix[i][j]==x){
+                    System.out.println("x is found in the location "+i+" and at "+j+" positon.");
+                }
+            }
+         }
+ }
+}*/
+/*income tax 
+class fn{
+    public static double caltax(int income){
+        double tax=0;
+        if(income<500000){
+            tax=0;
+        }else if(income>500000 && income<=1000000){
+            tax = (income*20)/100;
+        }else if(income>1000000){
+            tax = (income)*(0.30);
+        }
+        return tax;
+    }
+    public static void main(String args []){
+        Scanner sc = new Scanner(System.in);
+        int income=sc.nextInt();
+        System.out.println(caltax(income));
+
+
+    }
+}*/
+/* calculator
+class fn{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int a= sc.nextInt();
+        int b= sc.nextInt();
+        char ope= sc.next().charAt(0);
+        switch(ope){
+            case '+' : System.out.println(a+b);
+            break;
+            case '-' : System.out.println(a-b);
+            break;
+            case '*' : System.out.println(a*b);
+            break;
+            case '/' : System.out.println(a/b);
+            break;
+            default :System.out.println("invalid");
+        }
+    }
+}*/
+/*reverse of no using while
+class fn{
+public static void main(String []args){
+    Scanner sc =new Scanner(System.in);
+  int n = sc.nextInt();
+  
+  while(n>0){
+     int m=n%10;
+    System.out.print(m);
+    n=n/10;
+    
+  }
+  
+}
+
+}*/
+/*reveresing a number by storing it
+class fn{
+    public static void main(String []args){
+        Scanner sc= new Scanner(System.in);
+        int n= sc.nextInt();
+        int revnum=0;
+        while(n>0){
+        int m= n%10;
+        revnum=(revnum*10)+m;
+        n=n/10;
+            }
+        System.out.println(revnum);
+    }
+}*/
+/*prime check
+
+class fn{
+    public static boolean isprime(int num){
+        if(num<=1){
+            return false;
+        }
+        for(int i =2;i<=Math.sqrt(num);i++){
+            if(num%i==0){
+                return false;
+            }
+        }
+        return true;
+    }
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number");
+        int num=sc.nextInt();
+        if(isprime(num)){
+            System.out.println(num+" is a prime number");
+        }else{
+            System.out.println(num+" is not a peime number");
+        }
+        
+    }
+}*/
+/*claculating the sum of odd and even numbers
+class fn{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int n=1;
+        int even =0;
+        int odd =0;
+        while(n==1){
+            System.out.println("enter the number");
+            int m=sc.nextInt();
+            if(m%2==0){
+                even = even+m;
+            }
+            else{
+                odd=odd+m;
+            }
+           System.out.println("do u wnat to continue then enter 1 else 0");
+            n=sc.nextInt();
+            if(n==1){
+                continue;
+            }else{
+                break;
+            }
+        }
+        System.out.println("the sum of even numbers is "+ even);
+        System.out.println("the sm of odd numbers is "+ odd);
+    }
+}*/
+/*character print 
+class fn{
+    public static void main(String []args ){
+    char ch = 'A';
+    for(int i=1;i<=4;i++){
+        for(int j =1;j<=i;j++){
+            System.out.print(ch);
+            ch++;
+        }
+        System.out.println();
+    }
+    }
+}*/
+/*crazy parttern 
+class fn{
+    public static void main(String []args){
+    for(int i =1;i<=5;i++){
+        for(int j=1;j<=(5-i)+1;j++){
+            System.out.print(" ");
+        }
+        for(int j=i;j>=1;j--){
+            System.out.print(j);
+        }
+        for(int j=2;j<=i;j++){
+            System.out.print(j);
+        }
+        System.out.println();
+    }
+        }     
+    }*/
+/*binomial expansion
+class fn{
+    public static int fact(int n){
+        int sum=1;
+        for(int i=1;i<=n;i++){
+            sum = sum*i;
+        }
+        return sum;
+    }
+    public static int bioco(int n,int r ){
+        
+        int nfact=fact(n);
+        int rfact=fact(r);
+        int n_rfact =fact(n-r);
+        int deno = rfact*n_rfact;
+        int ans = nfact/deno;
+        return ans;
+    }
+    public static void main(String []args ){
+        Scanner sc =new Scanner(System.in);
+        int n=sc.nextInt();
+        int r=sc.nextInt();
+        System.out.println("the binomaial expansion of the following is :- "+ bioco(n,r));    
+    }
+}*/
+/*prime check and primes in given range 
+class fn{
+    public static boolean isprime(int n){
+        if(n<0){
+            return false;
+        }
+        if(n==2){
+            return true;
+        }
+        for(int i =2;i<=Math.sqrt(n);i++){
+            if(n%i==0){
+                return false ;
+            }
+            }
+            return true;
+        }
+    public static void rangeprime(int n){
+       for(int i=2;i<=n;i++){
+        if(isprime(i)){
+           System.out.print(i+" ");
+        }
+        
+       }
+       System.out.println();
+    }
+    public static void main (String []args){
+        Scanner sc =new Scanner(System.in);
+        int n= sc.nextInt();
+        rangeprime(n);
+
+    }
+}*/
+/*binary to dec using while loop
+class fn{
+    public static void bintodec(int n){
+        int pow=0;
+        int dec=0;
+        while(n>0){
+            int ld=n%10;
+            dec = dec+(ld * (int) Math.pow(2,pow));
+            pow++;
+            n=n/10;
+        }
+        System.out.println("the binary number is "+ dec);
+    }
+    public static void main(String []args ){
+        Scanner sc = new Scanner(System.in);
+        int n= sc.nextInt();
+        bintodec(n);
+    }
+}*/
+/*decimal to binary 
+class fn{
+    public static void dectobin(int n){
+        int pow =0;
+        int digit =0;
+        while(n>0){
+           int rem = n%2;
+            digit = digit + (rem * (int)Math.pow(10,pow));
+            pow++;
+            n=n/2;
+        }
+        System.out.println("the binary of the number is :- "+ digit);
+    }
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        dectobin(n);
+    }
+}*/
+/*palindrome
+class fn{
+    public static void palindrome(int n){
+        int number = n;
+        
+        int num =0;
+        while(n>0){
+            int rem = n%10;
+          num = num*10+rem;
+           
+            n=n/10;
+        }
+       if(number==num){
+        System.out.println("its a palindrome ");
+       }else{ 
+        System.out.println("its not a palindrome ");
+       }
+    }
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int n =sc.nextInt();
+        palindrome(n);
+    }
+}*/
+/*linear search
+class fn{
+    public static int linser(int numbers[], int key){
+        for(int i=0;i<=numbers.length;i++){
+            if(numbers[i]==key){
+                return i;
+            }
+        }
+        return-1;
+    }
+    public static void main(String [] args ){
+        int numbers [] = {1,2,3,4,5,6,7,8};
+        int key =7;
+        int index= linser(numbers,key);
+        if(index==-1){
+            System.out.println("the index is not found" );
+
+        }else{
+            System.out.println("the index is :-"+ index);
+        }
+    }
+}*/
+//binary search 
+/*class fn{
+    public static int binarysearch(int number[],int key){
+        int start =0 ;
+        int end =number.length -1;
+        while(start<=end){
+            int mid = (start+end)/2;
+            if(number[mid]==key){
+                return mid;
+            }
+            if(number[mid]<key){
+                start = mid+1;
+            }else{
+                end = mid -1; 
+            }
+        }
+        return -1;
+
+    }
+    public static void main(String []args ){
+        int number[]={1,2,3,4,5,6,7,8};
+        int key =6;
+        int postion=binarysearch(number,key);
+        System.out.println("the position of the nmber is :- "+ postion);
+
+    }
+}*/
+/*reverse of array 
+class fn{
+    public static void reversenum (int number[]){
+       
+        for(int i=number.length-1;i>=0;i--){
+           System.out.print(number[i]);
+        }
+    }
+    public static void main(String []args){
+        int number[] = {2,4,6,8,20};
+        reversenum(number);
+    }
+}*/
+/*pairs
+class fn{
+    public static void pairs(int number[]){
+        for(int i=0;i<number.length;i++){
+            for(int j=i+1;j<number.length;j++){
+                System.out.print("("+number[i]+","+number[j]+")"+" ");
+            }
+            System.out.println();
+        }
+    }
+    public static void  main(String []args){
+       int number []= {2,4,6,8,10}; 
+       pairs(number);
+    }
+}*/
+/*sub arrays
+class fn{
+    public static void printsubarray(int number[]){
+        for(int i=0;i<number.length;i++){
+            for(int j=i;j<number.length;j++){
+                for(int k=i;k<=j;k++){
+                    System.out.print(number[k]+ " ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String []args){
+        int number[]={2,4,6,8,10};
+        printsubarray(number);
+    }
+}*/
+//maximum subarray
+/*class fn{ 
+    public static void maxsubarraysum(int number[]){
+        int maxsum= 0;
+        for(int i=0;i<number.length;i++){
+            for(int j=i;j<number.length;j++){
+                int cursum =0;
+                for(int k =i;k<=j;k++){
+                    cursum=cursum+number[k];
+                }
+                System.out.println(cursum);
+                if(cursum>maxsum){
+                    maxsum=cursum;
+                }
+            }
+        }
+        System.out.println("the maxixmum subarray is :-"+maxsum);
+    }
+    public static void main(String []args){
+        int number[]={2,4,6,8,10};
+        maxsubarraysum(number);
+    }
+}*/
+/*reverseing an array with less space complexicity 
+class fn{
+    public static void reverse(int arr[]){
+        int start = 0; 
+        int end = arr.length-1;
+        while(start<end){
+            int temp = arr[end];
+            arr[end]=arr[start];
+            arr[start]=temp;
+            start++;
+            end--;
+        }
+        
+    }
+    public static void main(String []args){
+   int arr[]={2,5,3,7};
+   reverse(arr);
+   for(int i=0;i<arr.length;i++){
+    System.out.print(arr[i]);
+   }
+    }
+}*/
+/*max subarray brute force
+class fn{
+    public static void subarr(int arr[]){
+        int currsum =0;
+        int maxsum=Integer.MIN_VALUE;
+        int start =0;
+        int end = 0;
+
+        for(int i=0;i<arr.length;i++){
+            for(int j=i;j<arr.length;j++){
+                currsum =0;
+                for(int k=i;k<=j;k++){
+                    currsum =currsum+arr[k];    
+                }
+                //System.out.println(" the sum for this sub array is : "+ currsum);
+                if(currsum>maxsum){
+                    maxsum=currsum;
+                    start =i;
+                    end =j;
+                    
+                }    
+            }
+            
+            
+        }
+        System.out.println("the maxmimum sum of sub array is :- "+ maxsum);
+        System.out.println("the indexs are "+start+" and "+ end);
+    }
+    
+    public static void main(String []args ){
+        int arr[] = {2,4,5,6,7};
+        subarr(arr);
+       
+    }
+}*/
+/*prefix subarray
+class fn{
+    public static void maxsubarray(int arr []){
+        int currsum=0;
+        int maxsum=Integer.MIN_VALUE;
+        int prefix[]=new int[arr.length];
+        prefix[0]=arr[0];
+        for(int i=1;i<prefix.length;i++){
+            prefix[i]=prefix[i-1]+arr[i];
+        }
+        for(int i=0;i<prefix.length;i++){
+            System.out.print(prefix[i]+" ");
+        }
+        System.out.println();
+        for(int i =0;i<arr.length;i++){
+            for(int j=i;j<arr.length;j++){
+                currsum= i == 0 ? prefix[j] : prefix[j]-prefix[i-1];
+                if(currsum>maxsum){
+                    maxsum=currsum;
+                }
+                System.out.println(currsum);
+            }
+            
+            
+        }
+        System.out.println(maxsum);
+        
+    }
+    public static void main(String []args){
+        int arr[]={1,5,3,7,8};
+        maxsubarray(arr);
+    }
+}*/
+/*kadanes sub
+class fn{
+    public static void kadane(int ar[]){
+        int cs=0;
+        int ms=Integer.MIN_VALUE;
+        
+        for(int i=0;i<ar.length;i++){
+            cs=cs+ar[i];
+            ms=Math.max(cs,ms);
+            if(cs<0){
+                cs=0;
+            }    
+        }
+        System.out.println("the max sub is "+ms);
+    }
+        public static void main(String []args){
+        int ar []={-2,-4,-5,-6,-7,-11};
+        kadane(ar);
+    }
+}*/
+//trapping rainwater .
+/*class fn{
+    public static int trappingwater(int height[]){
+        int n= height.length;
+        int leftmax []=new int[n];
+        //calculating the max heights for the given array.
+        leftmax[0]=height[0];
+        for(int i=1;i<n;i++){
+            leftmax[i]=Math.max(leftmax[i-1],height[i]);
+            
+        }
+        //printing the left side array.
+        for(int i=0;i<n;i++){
+            System.out.print(leftmax[i]+" ");
+        }
+        System.out.println();
+        int rightmax[]=new int[n];
+        rightmax[n-1]=height[n-1];
+        //calculating the right side max heights for the given array.
+        for(int i=n-2;i>=0;i--){
+            rightmax[i]=Math.max(rightmax[i+1],height[i]);
+        }
+        // printing the right side max heights.
+        for(int i=0;i<n;i++){
+            System.out.print(rightmax[i]+" ");
+        }
+        //initiallizing the trapped water.
+        int trappedwater=0;
+        for(int i=0;i<n;i++){
+            // calculating the trapped water .
+            trappedwater+=(Math.min(rightmax[i],leftmax[i])-height[i]);
+        }
+        System.out.println();
+        return trappedwater;
+        
+        
+    }
+    public static void main(String []args){
+        int height []={4,2,0,6,3,2,5};
+        
+        System.out.println("the water trapped is :- "+ trappingwater(height));
+    }
+}*/
+/*max stock price 
+class fn{
+    public static int buyandsellstock(int prices[] ){
+        int bp=Integer.MAX_VALUE;
+        int mp=0;
+        for(int i=0;i<prices.length;i++){
+           if(bp<prices[i]){
+            int profit=prices[i]-bp;
+            mp=Math.max(mp,profit);
+           }else{
+            bp=prices[i];
+           }
+        }
+        return mp;
+    }
+    public static void main(String []args){
+        int prices[]={7,1,5,3,6,4};
+       int stock= buyandsellstock(prices);
+       System.out.println("the max profit is :- "+ stock);
+    }
+}*/
+/*bubble sort
+class fn{
+    public static void bubblesort(int arr[]){
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr.length-1-i;j++){
+                if(arr[j]>arr[j+1]){
+                    int temp=arr[j+1];
+                        arr[j+1]=arr[j];
+                        arr[j]=temp;
+                }
+            }
+        }
+    }
+    public static void printarr(int arr[]){
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
+    public static void main(String []args){
+        int arr[]={-1,-6,-3,2,4};
+        bubblesort(arr);
+        printarr(arr);
+    }
+}*/
+/*//selection sort
+class fn{
+    public static void selectionsort(int arr[]){
+        for(int i=0;i<arr.length-1;i++){
+            int minpos=i;
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[minpos]>arr[j]){
+                    minpos=j;
+                }
+            }
+            int temp=arr[minpos];
+            arr[minpos]=arr[i];
+            arr[i]=temp;
+        }
+    }
+    public static void print(int arr[]){
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
+    public static void main(String []args){
+        int arr[]={5,1,7,4,9};
+        selectionsort(arr);
+        print(arr);
+    }
+}*/
+//counting sort 
+/*class fn {
+    public static void frequencySort(int nums[]) {
+        int largest=Integer.MIN_VALUE;
+        
+        int count[]=new int[nums.length];
+        for(int i=0;i<nums.length;i++){
+            count[nums[i]]++;
+
+        } 
+        for(int i=0;i<count.length;i++){
+            System.out.print(count[i]);
+        }  
+        System.out.println();
+        int maxcount=Integer.MIN_VALUE;
+        for(int i=0;i<count.length;i++){
+            if(count[i]>maxcount){
+                maxcount=i;
+            }
+        }
+        System.out.println(count[maxcount]);
+        int j=0;
+        for(int i=0;i<count.length;i++){
+            while(count[i]>0){
+                nums[j]=i;
+                j++;
+                count[i]--;
+            }
+        }
+       
+        
+       
+    } 
+    public static void print(int nums[]){
+        for(int i =0;i<nums.length;i++){
+            System.out.print(nums[i]+" ");
+        }
+    }
+public static void main(String []args){
+    Scanner sc = new Scanner(System.in);
+    int nums[]={1,4,1,3,4,2,3,7,4};
+    frequencySort(nums);
+    print(nums);
+}
+}*/
+/*2d matrix with max and min element 
+class fn{
+    public static void matrixarr(int matrix[][] ){
+        Scanner sc=new Scanner(System.in);
+        for(int i =0;i<matrix.length;i++){
+            for(int j=0;j<matrix[0].length;j++){
+                matrix[i][j]=sc.nextInt();
+            }
+        }
+        for(int i =0;i<matrix.length;i++){
+            for(int j=0;j<matrix[0].length;j++){
+                System.out.print(matrix[i][j]+" ");
+            }
+            System.out.println();
+        }
+        int max=Integer.MIN_VALUE;
+        int min=Integer.MAX_VALUE;
+        for(int i =0;i<matrix.length;i++){
+            for(int j=0;j<matrix[0].length;j++){
+                if(matrix[i][j]>max){
+                    max = matrix[i][j];
+                }
+                if(matrix[i][j]<min){
+                    min=matrix[i][j];
+                }
+            }
+    }
+    System.out.println("the max value is :"+max+" and the min value is :"+min);
+}
+    public static void main(String []args){
+        Scanner sc =new Scanner(System.in);
+        int matrix[][]= new int[3][3];
+        matrixarr(matrix);
+    }
+}*/
+/*spiral matrix
+class fn{
+    public static void spiral(int matrix[][]){
+        int startrow=0;
+        int startcol=0;
+        int endrow=matrix.length-1;
+        int endcol=matrix[0].length-1;
+        while( startrow<=endrow && startcol<=endcol){
+             for(int j=startcol;j<=endcol;j++){
+                System.out.print(matrix[startrow][j]+" ");
+             }
+             for(int i=startrow+1;i<=endrow;i++){
+                System.out.print(matrix[i][endcol]+" ");
+             }
+             for(int j=endcol-1;j>=startcol;j--){
+                System.out.print(matrix[endrow][j]+" ");
+             }
+             for(int i=endrow-1;i>startrow;i--){
+                System.out.print(matrix[i][startcol]+" ");
+             }
+            startrow++;
+            startcol++;
+            endrow--;
+            endcol--;
+        }
+    }
+    public static void main(String []args){
+        int matrix[][]={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+        spiral(matrix);
+}
+}
+*/
+/*diagonal sum
+class fn{
+    public static int diagonalsum(int mat[][]){
+        int sum=0;
+        for(int i = 0;i<mat.length;i++){
+            sum+= mat[i][i];
+            if(i!=mat.length-1-i){
+                sum+=mat[i][mat.length-1-i];
+            }
+        }
+        return sum;
+    }
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        int row =sc.nextInt();
+        int col =sc.nextInt();
+        int mat[][]= new int[row][col];
+        for(int i=0;i<mat.length;i++){
+            for(int j=0;j<mat.length;j++){
+                mat[i][j]=sc.nextInt();
+            }
+        }
+        int result=diagonalsum(mat);
+        System.out.println(result);
+    }
+}*/
+/*sorted matrix search using staircase search
+class fn{
+    public static boolean staircasesearch(int matrix[][], int key){
+        int row =0; 
+        int col =matrix[0].length-1;
+        while(row>=0 && col<matrix[0].length){
+            if(matrix[row][col]==key){
+                System.out.println("found the key at ("+row+","+col+")");
+                return true;
+            }
+            else if(key>matrix[row][col]){
+                row++;
+            }
+            else{
+                col--;
+            }
+
+        }
+        System.out.println("key does not exist");
+        return false;
+    }
+    public static void main(String []args ){
+        Scanner sc =new Scanner(System.in);
+        int matrix[][]={{10,20,30,40},{15,25,35,45},{27,29,37,48},{32,33,39,50}};
+        int key = 48;
+        staircasesearch(matrix,key);
+    }
+}*/
+/*sum of the rows and columns only
+class fn{
+    public static void printsum(int arr[][] ){
+        int sum=0;
+        int j=2;
+        for(int i=0;i<arr[0].length;i++){
+            sum+=arr[i][j];
+        }
+        System.out.println(sum);
+    }
+    public static void main (String []args){
+        int arr[][]={{1,4,9},{11,4,3},{2,2,3}};
+       
+        printsum(arr);
+    }
+}*/
+/*transpose of the matrix
+class fn{
+    public static void transpose(int mat[][]){
+        for(int i=0;i<mat.length;i++){
+            for(int j=0;j<mat[0].length;j++){
+                System.out.print(mat[j][i]+" ");
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String []args ){
+        Scanner sc = new Scanner(System.in);
+        int row=sc.nextInt();
+        int col=sc.nextInt();
+        int mat[][] =new int[row][col];
+        for(int i=0;i<row;i++){
+            for(int j=0;j<col;j++){
+                mat[i][j]=sc.nextInt();
+            }
+        }
+        transpose(mat);
+        
+
+    }
+    }*/
+/*String palindrome 
+     class fn{
+        public static boolean palindrome(String name ){
+            for(int i=0;i<name.length()/2;i++){
+                if(name.charAt(i)!=name.charAt(name.length()-i-1)){
+                    return false;
+                }
+            }
+            return true;
+        }
+        public static void main(String []args){
+           String name = "racecar"; 
+           System.out.println(palindrome(name));
+        }
+    }*/
+/*shortest path using string using directions..... 
+    class fn{
+        public static float shortestpathinstring(String name){
+            int x=0;
+            int y=0;
+            for(int i=0;i<name.length();i++){
+                if(name.charAt(i)=='N'){
+                    y++;
+                }
+                else if(name.charAt(i)=='S'){
+                    y--;
+                }
+                else if(name.charAt(i)=='E'){
+                    x++;
+                }
+                else{
+                    x--;
+                }
+            }
+            int X=x*x;
+            int Y=y*y;
+            float shortestlen= (float)Math.sqrt(X+Y);
+            return shortestlen;
+        }
+        public static void main(String []args){
+            String name="WNEENESENNN";
+            System.out.println(shortestpathinstring(name));
+            
+
+        }
+    }*/
+/* largest string 
+    class fn {
+        public static void largeststring(String name[]){
+            String largest=name[0];
+            for(int i=0;i<name.length;i++){
+               if(largest.compareTo(name[i])<0){
+                largest = name[i];
+
+               }
+
+
+            }
+            System.out.println(largest);
+        }
+        public static void main(String []args) {
+            String name [] ={"aditya","yadav","max"} ;
+           largeststring(name);
+        }
+    }*/
+/*String first letter to covert to upper case 
+    class fn {
+        public static String touppercase(String name){
+            StringBuilder name2= new StringBuilder("");
+            char ch = Character.toUpperCase(name.charAt(name.length()-1));
+            name2.append(ch);
+            for(int i=name.length()-2;i>=0;i--){
+                if(name.charAt(i)==' '){
+                    name2.append(name.charAt(i));
+                    i--;
+                    name2.append(Character.toUpperCase(name.charAt(i)));
+
+                }
+                else{
+                    name2.append(name.charAt(i));
+                }
+            }
+            return name2.toString(); 
+        }
+        public static void main(String []args){
+           String name="hi my name is aditya yadav";
+           System.out.println(touppercase(name));
+
+        }
+    }*/
+//making last letter of the given string to uppercase
+class fn{
+    public static String touppercase (String name){
+        StringBuilder sc=new StringBuilder("");
+        int n= name.length();
+        for(int i=0;i<n;i++){
+            if(i+1<n && name.charAt(i+1)==' ' || i+1==n){
+                sc.append(Character.toUpperCase(name.charAt(i)));
+            }
+            else{
+                sc.append(name.charAt(i));
+            }
+        }
+        return sc.toString();
+    }
+    public static void main(String []args){
+        String name="my name is aditya";
+        System.out.println(touppercase(name));
+
+    }
+}
+/*compress String...
+class fn{
+    public static String compress(String x){
+        StringBuilder n=new StringBuilder("");
+        int count=1;
+        for(int i=1;i<x.length();i++){
+            if(x.charAt(i-1)==x.charAt(i)){
+                count++;
+            }
+            else{
+                n.append(x.charAt(i-1));
+                if(count>1){
+                    n.append(count);
+                }
+                count=1;
+            }    
+        }
+        n.append(x.charAt(x.length()-1));
+        if(count>1){
+            n.append(count);
+        }
+        return n.toString();
+    }
+    public static void main(String []args){
+        String x="aaabbcccdd";
+        System.out.println(compress(x));     
+    }
+}*/
+/*class fn{
+
+    public static void main(String []args){
+        String name1 ="aditya";
+        int count =0;
+        
+
+        for(int i=0;i<name1.length();i++){
+            char name=name1.charAt(i);
+            if(name=='a' || name=='e' || name=='i' || name=='o' || name=='u'){
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}*/
+/*no.of 1 bits in an number
+class fn{
+    public static int evenorodd(int n){
+        int count =0;
+        while(n>0){
+            if((n&1)!=0){
+                count++;
+            }
+            n = n>>1;
+        }
+        return count;
+    }
+    public static void main(String []args){
+        System.out.println(evenorodd(15));
+        
+        
+
+
+    }
+}*/
+/*fast exponent 
+class fn{
+    public static int fastexpo(int n, int a){
+        int ans =1;
+        while(n>0){
+            if((n&1)!=0){
+                ans = ans *a;
+            }
+            a=a*a;
+            n=n>>1;
+        }
+        return ans;
+    }
+    public static void main(String []args){
+        System.out.println(fastexpo(5,3));
+    }
+}*/
+/*swap uing bit manipulation
+class fn{
+   
+    public static void main(String []args){
+        int a=5;
+        int b =6;
+        System.out.println(a+" "+b);
+        a=a^b;
+        b=a^b;
+        a=a^b;
+        System.out.println(a+" "+b);
+       
+}
+}  */
+/*adding 1 to integer using bit mani
+class fn{
+    public static int add1(int n){
+        return -~n;
+    }
+    public static void main(String []args){
+        System.out.println(add1(10));
+    }
+}*/
+
